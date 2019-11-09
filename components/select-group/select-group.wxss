@@ -1,0 +1,14 @@
+/* components/select-group/select-group.wxss */
+
+.select-group{
+  display: flex;
+  justify-content: space-between;
+  margin: 25rpx 20rpx;
+}
+
+.each{
+  width: 100rpx;
+  font-size: 25rpx;
+  text-align: center;
+  
+}

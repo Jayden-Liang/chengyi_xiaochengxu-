@@ -16,14 +16,31 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
+    "selectedColor":"#ff7373",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "/assets/images/tabbar/home.png",
+        "selectedIconPath": "/assets/images/tabbar/home_active.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/catagory/catagory",
+        "text": "分类",
+        "iconPath": "/assets/images/tabbar/category.png",
+        "selectedIconPath": "/assets/images/tabbar/category_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/assets/images/tabbar/cart.png",
+        "selectedIconPath": "/assets/images/tabbar/cart_active.png"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "text": "个人",
+        "iconPath": "/assets/images/tabbar/profile.png",
+        "selectedIconPath": "/assets/images/tabbar/profile_active.png"
       }
     ]
   }

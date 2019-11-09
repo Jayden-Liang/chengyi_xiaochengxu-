@@ -1,0 +1,6 @@
+<!--components/select-group/select-group.wxml-->
+<view class="select-group">
+ <block wx:for="{{typelist}}" wx:key="index">
+    <view class="each">{{item}}</view>
+  </block>
+</view>

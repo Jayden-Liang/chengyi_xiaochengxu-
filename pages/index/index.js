@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    typelist: ["女装", "男装", "童装", "婴幼儿","运动","限时特惠"],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
