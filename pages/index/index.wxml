@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="main">
+<search-bar inner-text="Some text"></search-bar>
+
+</view>

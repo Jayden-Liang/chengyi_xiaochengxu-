@@ -1,0 +1,23 @@
+/* components/search-bar/search-bar.wxss */
+.search_bar{
+  height: 60rpx;
+  background-color:#eeeeee;
+  border-radius: 30rpx;
+  display: flex;
+  width: 92%;
+  margin: auto;
+}
+
+.search_bar .icon{
+  margin-top: 8rpx;
+  margin-left: 4rpx;
+
+}
+
+.search_prod{
+  color: #c0c0c0;
+  display: inline-block;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  margin-left: 4rpx;
+}
