@@ -1,6 +1,25 @@
 <!--index.wxml-->
 <view class="main">
 <search-bar ></search-bar>
-<select-group typelist="{{typelist}}"></select-group>
+<select-group 
+  typelist="{{typelist}}" 
+  activeclass="home_select_group_active"
+  flexclass="home_flex"
+  >
+</select-group>
 <swiper></swiper>
+<view class='banner'>
+ <view>天猫旗舰店</view>
+ <view>全场满￥99包邮</view>
+ <view>累计评价</view>
+</view>
+<view class='lead'> 
+  <!-- <navigator url="pages/search/search">跳转到新页面</navigator> -->
+  <view bindtap="ToDetail" ><image  mode="widthFix" src="/assets/images/home/lead/O1CN.jpg"></image></view>
+  <view><image  mode="widthFix" src="/assets/images/home/lead/sdfa.jpg"></image></view>
+</view>
+<products />
+
+
+
 </view>

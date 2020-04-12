@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+<view class="search_bar" > 
+  <view class='left'>
+    <view class="icon"><icon type="search" /></view>
+    <input auto-focus  maxlength="10" placeholder="输入关键词" />
+  </view>
+  
+  <view class='cancel' bindtap="back">取消</view>
+</view>
+<view class='hot'>
+  <view class='title'>热门搜索</view>
+  <view class='hot-tags' >
+    <block wx:for='{{hotTags}}' wx:key='{{index}}'>
+      <view class='tag'>{{item}}</view>
+    </block>
+  </view>
+</view>
+
+

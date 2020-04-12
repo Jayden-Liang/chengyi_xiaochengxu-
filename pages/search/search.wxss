@@ -1,0 +1,63 @@
+/* pages/search/search.wxss */
+
+
+.search_bar{
+  position: relative;
+
+  padding: 10rpx;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #eeeeee solid;
+}
+
+
+.left{
+  height: 60rpx;
+  background-color:#eeeeee;
+  display: flex;
+  margin-left: 20rpx;
+  width: 85%;
+}
+
+.icon{
+  margin-top: 8rpx;
+  margin-left: 4rpx;
+  margin-right: 5rpx;
+
+}
+.left input{
+
+  width: 90%;
+  height: 80%;
+  margin-top: 5rpx;
+}
+
+.cancel{
+
+  width: 15%;
+  text-align: center;
+}
+
+.hot .title{
+  color: #acacac;
+  margin: 40rpx 30rpx;
+}
+
+.hot-tags{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  
+}
+
+.tag{
+  font-size: 26rpx;
+  padding: 15rpx 30rpx;
+  background-color:#eeeeee;
+  border-radius: 10rpx;
+  color: #acacac;
+  margin: 10rpx;
+
+}

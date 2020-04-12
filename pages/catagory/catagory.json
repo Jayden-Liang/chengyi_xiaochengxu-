@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "search-bar": "/components/search-bar/search-bar",
+    "select-group": "/components/select-group/select-group"
+
+
+  },
+  "navigationBarTitleText":"分类"
+  
 }

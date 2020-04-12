@@ -1,1 +1,87 @@
 /* pages/account/account.wxss */
+.all{
+  font-size: 28rpx;
+}
+.header{
+  height: 160rpx;
+
+  background-color: #2a474b;
+  position: relative;
+  
+}
+.header image{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20rpx;
+  left: 20rpx;
+  color: #cfd6d7;
+}
+.version{
+  height: 40rpx;
+  background-color: #133337;
+  color: white;
+  position: relative;
+}
+.version text{
+  position: absolute;
+  right: 20rpx;
+  color: #597073;
+  font-size: 26rpx;
+}
+
+.my-order{
+  display: flex;
+  height: 80rpx;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px #e5e5e5 solid;
+  
+}
+.my-order text:first-child{
+  margin-left: 30rpx;
+}
+
+.my-order view{
+  display: flex;
+  font-size: 26rpx;
+  color: #89999b;
+}
+.icon{
+  height: 30rpx;
+  width: 30rpx;
+  margin: 0 20rpx 0 10rpx;
+ 
+}
+
+.order-detail, .service-detail,.serviceMore{
+  padding: 50rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+  text-align: center;
+  border-bottom: 20rpx #e5e5e5 solid;
+}
+
+.service-detail{
+  border-bottom: 1px #e5e5e5 solid;
+}
+
+.serviceMore{
+  border-bottom: none;
+  width: 65%;
+}
+
+
+.my-service{
+  padding: 30rpx;
+  border-bottom: 1px #e5e5e5 solid;
+}

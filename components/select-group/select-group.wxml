@@ -1,6 +1,6 @@
 <!--components/select-group/select-group.wxml-->
-<view class="select-group">
+<view class="flexclass">
  <block wx:for="{{typelist}}" wx:key="index">
-    <view class="each">{{item}}</view>
+    <view data-index="{{index}}" bindtap="tapName" class="each {{active[index] == 1 ? 'activeclass' : ''}}">{{item}}</view>
   </block>
 </view>

@@ -16,6 +16,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  ToDetail: function () {
+    console.log('fuck')
+    wx.navigateTo({
+      url: "/pages/index/products/product/product"
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

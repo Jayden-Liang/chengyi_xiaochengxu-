@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/catagory",
     "pages/catagory/catagory",
     "pages/cart/cart",
-    "pages/account/account"
+    "pages/account/account",
+    "pages/search/search",
+    "pages/index/products/product/product"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,7 +16,7 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "selectedColor":"#ff7373",
+    "selectedColor": "#ff7373",
     "list": [
       {
         "pagePath": "pages/index/index",

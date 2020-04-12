@@ -1,2 +1,49 @@
 <!--pages/account/account.wxml-->
-<text>pages/account/account.wxml</text>
+<view class='all'>
+  <view class='header'>
+     <view class='user'>
+       <image src="{{img_url}}"></image>
+       <text>{{username}}</text>
+    </view>
+  </view>
+  <view class='version'>
+       <text>版本1.0.100</text>
+  </view>
+  <view class='order'>
+    <view class='my-order'>
+       <text >我的订单</text>
+       <view><text>查看全部订单</text> <image class='icon' src='/assets/images/icon-left.png'></image></view>
+    </view>
+    <view class='order-detail'>
+      <block wx:for='{{orderDetail}}' wx:key="{{index}}">
+        <view class='each'>
+           <image src='/assets/images/account/order/{{index+1}}.png' style="height: 50rpx; width: 50rpx;"></image>
+           <view>{{item}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class='service'>
+     <view class='my-service'>
+        <text>我的服务</text>
+     </view>
+     <view class='service-detail'>
+       <block wx:for='{{serviceDetail}}' wx:key="{{index}}">
+        <view class='service-each'>
+           <image src='/assets/images/account/service/{{index+1}}.png' style="height: 50rpx; width: 50rpx;"></image>
+           <view>{{item}}</view>
+        </view>
+      </block>
+     </view>
+     <view class='serviceMore'>
+  
+       <block wx:for='{{serviceMore}}' wx:key="{{index}}">
+        <view class='serviceMore-each'>
+           <image src='/assets/images/account/service/more/{{index+1}}.png' style="height: 50rpx; width: 50rpx;"></image>
+           <view>{{item}}</view>
+        </view>
+      </block>
+     </view>
+  </view>
+</view>

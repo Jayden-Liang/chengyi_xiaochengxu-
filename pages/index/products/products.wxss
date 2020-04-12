@@ -1,0 +1,38 @@
+/* pages/index/products/products.wxss */
+
+.col{
+  display: flex;
+  width: 96%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.detail{
+  background: #f8f8f8;
+  margin-top: 20rpx;
+}
+.col image{
+  width: 350rpx;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.description{
+  display: flex;
+  width: 92%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+  font-size: 24rpx;
+}
+
+.price-set{
+
+  padding-bottom: 15rpx;
+}
+.price{
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #ff0000;
+}

@@ -1,0 +1,210 @@
+<!--pages/index/products/product/product.wxml-->
+<view>
+   <view class='pic-header'>
+      <image bindtap="wakeUpbtns"  mode='widthFix' src='/assets/images/home/products/product-detail/pic-header.png'></image>
+      <view class='more-products {{ isActive ? "header-button-active":"header-button"}}'>
+        <view class='hand-bag'><image  mode='widthFix' src='/assets/images/home/products/product-detail/hand-bg.png'></image></view>
+        <text class='button-text' >整套买</text>
+      </view>
+
+      <view class='btn btn-1  {{ isShow ? "btn-active":"btn-hide"}}' >
+           <view>飞行员外套-男</view>
+           <view class='price'>
+               <view><text>￥</text> <text>129</text></view><view class='back-icon'>
+               <mp-icon icon="arrow" color="white" size="{{12}}"></mp-icon></view> 
+           </view>
+      </view>
+      <view class='btn btn-2 {{ isShow ? "btn-active":"btn-hide"}}' >
+           <view>休闲九分裤-男</view>
+           <view class='price'>
+              <view><text>￥</text> <text>119</text></view><view class='back-icon'>
+              <mp-icon icon="arrow" color="white" size="{{12}}"></mp-icon></view> 
+            </view>
+      </view>
+      
+   </view>
+   <view class='main'>
+      <view class='product-info'>
+       <view class='product-price'>
+          <view class='price-tag'><text>￥</text> <text>49</text></view>
+          <view class='store-share'>
+              <view class='tianmao'> 
+                    <view><image   src='/assets/images/home/products/product-detail/tianmao.png'></image> </view>
+                    <text>天猫旗舰店</text> 
+              </view>
+              <view class='share'>
+                   <view><image   src='/assets/images/home/products/product-detail/share.png'></image> </view> 
+                   <text>分享</text>
+              </view>
+           </view>
+       </view>
+       <view class='product-title'><text>竹节棉亨利领T恤-男</text></view>
+      </view>
+      <view class='delivery'>
+          <view class='delivery-1'>
+             <view>发货</view>
+             <view class='location'>
+                <view><image  src='/assets/images/home/products/product-detail/location.png'></image></view>
+                <text>上海</text></view>
+            <view class='divider'></view>
+             <view class='delivery-price'>快递： 10元</view>
+          </view>
+          
+          <view class='activities'>
+             <view>优惠</view>
+             <view class='promo-sale'>促销</view>
+             <view class='promo-text'><text>满￥29包邮</text></view>
+          </view>
+      </view>
+      <view class='gurrantee' catchtap="openGurranteeModal">
+          <view ><text>保障</text><text>7天退货.安全退款</text>
+          </view>
+          <view><mp-icon icon="arrow" color="#999999" size="{{12}}"></mp-icon></view>
+      </view>
+      <view class='selects'>
+         <view class='selects-choices'>
+             <view class='selects-choices-detail'> 
+                    <text class='selects-choices-detail-text'>选择</text> 
+                    <view>
+                       <text>颜色  尺码</text>
+                    <view class='selects-choices-detail-colors'>
+                       <view class='images'>
+                           <image src="/assets/images/home/products/product-detail/detail-1.jpg"></image>
+                           <image src="/assets/images/home/products/product-detail/detail-2.jpg"></image>
+                           <image src="/assets/images/home/products/product-detail/detail-3.jpg"></image>
+                           <image src="/assets/images/home/products/product-detail/detail-4.jpg"></image>
+                       </view>
+                       <view class='colors'><text>共4种颜色可选</text></view>
+                    </view>
+                    </view> 
+                    
+             </view> 
+             <view><mp-icon icon="arrow" color="#999999" size="{{12}}"></mp-icon></view>
+         </view>
+      </view>
+      <view class='product-comments'>
+          <view class='comments-title'>
+             <view>商品评价(2)</view>
+             <view class='find-more'>
+                <text>查看全部</text>
+                <view><mp-icon icon="arrow" color="#999999" size="{{12}}"></mp-icon></view>
+             </view>
+          </view>
+          <view>
+         <view class='comment-id'><text>订单后四位: 7836</text></view>
+           <view>很好</view>
+         </view>
+      </view>
+
+      <view class='product-id'>
+            <view class='comments-title'>
+             <view>商品款号: 46636</view>
+             <view class='find-more'>
+                <text>查看商品信息</text>
+                <view><mp-icon icon="arrow" color="#999999" size="{{12}}"></mp-icon></view>
+             </view>
+          </view>
+          <view class='product-material'>棉100%</view>
+      </view>
+      
+      <view class='size-table'>
+           <view class='comments-title'>
+             <view>尺码表</view>
+             <view class='find-more'>
+                <text>查看真人试穿记录</text>
+                <view><mp-icon icon="arrow" color="#999999" size="{{12}}"></mp-icon></view>
+             </view>
+          </view>
+          <view class='size-table-image'>
+            <image mode='widthFix' src="/assets/images/home/products/product-detail/size-table.png"></image>
+          </view>
+      </view>
+
+      <view class='image-group'>
+         <image mode='widthFix' src="/assets/images/home/products/product-detail/pic-1.png"></image>
+         <image mode='widthFix' src="/assets/images/home/products/product-detail/pic-3.png"></image>
+         <image mode='widthFix' src="/assets/images/home/products/product-detail/pic-4.png"></image>
+         <image mode='widthFix' src="/assets/images/home/products/product-detail/pic-5.png"></image>
+         <image mode='widthFix' src="/assets/images/home/products/product-detail/pic-6.png"></image>
+      </view>
+
+   </view>
+   
+   <view class='footer'>
+      <view class='toHome'>
+         <view><image src='/assets/images/tabbar/home.png'></image></view>
+         <view>首页</view>
+      </view>
+      <view class='tochart'> 
+         <view><image src='/assets/images/tabbar/cart.png'></image></view>
+         <view>购物车</view>
+      </view>
+      <view class='like'> 
+         <view><image src='/assets/images/home/products/product-detail/star.png'></image></view>
+         <view>收藏</view>
+      </view>
+      <view class='add-to-cart' > 
+         <view bindtap="openSelectModal" class='add-to-cart-text'><text>加入购物车</text></view>
+          
+      </view>
+      <view></view>
+      <view></view>
+   </view>
+
+  
+<mp-halfScreenDialog 
+                        show="{{showGurranteeModal}}"
+                        maskClosable="{{true}}" 
+                        btn-text="知道了" 
+ >
+  <view class='gurrantee-modal'>
+      <view class='title'><text>基础保障</text></view>
+      <view class='modal-text'>
+         <view class='myicon'><mp-icon icon="done" color="#f7347a" size="{{12}}"></mp-icon></view>
+         <view>
+            <view>7天退货</view>
+            <view class='modal-text-info'>自签收日起，7天内可无理由申请退货</view>
+         </view>
+      </view>
+      <view class='modal-text'>
+         <view class='myicon'><mp-icon icon="done" color="#f7347a" size="{{12}}"></mp-icon></view>
+         <view>
+            <view>安全退款</view>
+            <view class='modal-text-info'>退货商品验收无误后，退款将于1-3个工作日原路退回（实际退款时长以支付单位为准）</view>
+         </view>
+      </view>
+  </view>
+ 
+ </mp-halfScreenDialog>
+
+ <mp-halfScreenDialog 
+                        show="{{showSelectModal}}"
+                        maskClosable="{{true}}" 
+                        btn-text="确认" 
+ >
+  <view class='selects-modal'>
+     <view class='selects-header'>
+         <view class='select-desc'>
+            <view class='select-desc-pic'><image mode='widthFix' src="/assets/images/home/products/product-detail/detail-3.jpg"></image></view>
+            <view class='price-and-color'> 
+              <view><text class='money-mark'>￥</text><text class='price'>49</text></view>
+              <view class='color'>已选择 黑色</view>
+            </view> 
+         </view>
+         <view class='selects-icon'><mp-icon icon="close" color="#999999" size="{{20}}"></mp-icon></view>
+     </view>
+     <view class='color-select'>
+       <view>颜色</view>
+       <view class='color-group'>
+          <view class='color-1 color'></view>
+          <view class='color-2 color'  ></view>
+          <view class='color-3 color'></view>
+          <view class='color-4 color'></view>
+       </view>
+     </view>
+     
+  </view>
+ 
+ </mp-halfScreenDialog>
+</view>
+

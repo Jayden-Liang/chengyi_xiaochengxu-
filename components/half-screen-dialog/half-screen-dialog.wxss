@@ -1,0 +1,106 @@
+.weui-half-screen-dialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 75%;
+  z-index: 5000;
+  line-height: 1.4;
+  background-color: #fff;
+  /* overflow: hidden; */
+}
+
+.weui-half-screen-dialog__hd {
+  font-size: 8px;
+  height: 8em;
+  display: flex;
+  align-items: center;
+
+}
+
+.weui-half-screen-dialog__hd .weui-icon-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+
+.weui-half-screen-dialog__hd__side {
+  position: relative;
+  left: -8px;
+}
+
+.weui-half-screen-dialog__hd__main {
+  flex: 1;
+}
+
+.weui-half-screen-dialog__hd__side+.weui-half-screen-dialog__hd__main {
+  text-align: center;
+  padding: 0 40px;
+
+}
+
+.weui-half-screen-dialog__hd__main+.weui-half-screen-dialog__hd__side {
+  right: -8px;
+  left: auto;
+
+}
+
+.weui-half-screen-dialog__hd__main+.weui-half-screen-dialog__hd__side .weui-icon-btn {
+  right: 0;
+}
+
+
+
+.weui-mask {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.weui-mask_transparent {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.weui-mask, .weui-half-screen-dialog {
+  transition: all 0.3s;
+}
+
+.weui-hidden .weui-mask {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.weui-hidden .weui-half-screen-dialog {
+  overflow: hidden;
+  transform: translateY(100%);
+}
+
+.weui-show .weui-mask {
+  opacity: 1;
+  visibility: visible;
+}
+
+.weui-show .weui-half-screen-dialog {
+  transform: translateY(0%);
+}
+
+.mybutton{
+  background: #420420;
+  font-size: 25rpx;
+  height: 100rpx;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}

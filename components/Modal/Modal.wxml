@@ -1,0 +1,5 @@
+<!--components/Modal/Modal.wxml-->
+<view class='Modal' >
+             <view class='backdrop' bindtap='cancelModal' wx:if="{{show}}"></view>
+             <view class='modal {{show? "modal-active":"modal-hide"}}'  ></view>
+</view>

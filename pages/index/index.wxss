@@ -1,2 +1,29 @@
 /**index.wxss**/
 
+.banner{
+  display: flex;
+  margin: 30rpx auto;
+  justify-content: space-around;
+  font-size: 26rpx;
+}
+
+.lead{
+  display: flex;
+  width: 96%;
+  margin: auto;
+  justify-content: space-between;
+}
+.lead image{
+  width: 350rpx;
+}
+
+.home_select_group_active{
+  border-bottom: 1px red solid;
+
+}
+
+.home_flex{
+  display: flex;
+  justify-content: space-around;
+  margin: 25rpx 20rpx 10rpx 6rpx;
+}

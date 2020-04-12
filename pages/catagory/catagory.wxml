@@ -1,2 +1,31 @@
 <!--pages/catagory/catagory.wxml-->
-<text>pages/catagory/catagory.wxml</text>
+<search-bar />
+<select-group 
+  typelist="{{typelist}}" 
+  activeclass="cata_select_group_active"
+  flexclass="cata_flex"
+  bind:myevent="onMyEvent"
+  >
+</select-group>
+<view class='cata-zones'>
+   <view class='tag-zone'>
+    <block wx:for="{{stabletag}}" wx:key="{{index}}">
+      <view class="tag" bindtap="tapAllgoods" >{{item}}</view>
+    </block>
+     <block wx:for="{{tags}}" wx:key="{{index}}">
+       <view class="tag {{ activetag== item ? 'tag-active' : ''}}" data-name="{{item}}" bindtap="tagTap">{{item}}</view>
+     </block>
+   </view> 
+   <view class='center-void'>
+   </view>
+   <view class='display-zone' style="height:{{displayHeight}}rpx" >
+      <block wx:for="{{display}}" wx:key="{{index}}">
+      <view class='each'>
+         <image style="height: 100rpx; width: 100rpx; " src='{{item.url}}'></image>
+         <view>{{item.name.item}}</view>   
+      </view>
+        
+      </block>
+   </view>
+</view>
+

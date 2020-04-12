@@ -1,5 +1,5 @@
 <!--components/search-bar/search-bar.wxml-->
-<view class="search_bar"> 
+<view class="search_bar" bindtap="tapSearch"> 
   <view class="icon"><icon type="search" /></view>
   <view class="search_prod">搜索商品</view>
 </view>

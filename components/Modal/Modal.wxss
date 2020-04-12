@@ -1,0 +1,46 @@
+/* components/Modal/Modal.wxss */
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000000;
+  opacity: 0.6;
+  width: 100vh;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.modal{
+  width: 100%;
+  height: 300rpx;
+  background: lightcyan;
+  z-index: 1001;
+  position: absolute;
+  animation-name: myanimation;   /*  名字，随便取 */
+  animation-duration: 0.3s;            /*  持续时间 */
+  animation-iteration-count: 1;    /*  动画执行三遍， 设置为infinite，可以一直执行 */
+  animation-timing-function: ease-out; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes myanimation{
+  0% { bottom: -300rpx; left: 0px;  }   /*  0%是指从零开始， */
+  100% {  bottom: 0rpx; left: 0px;  }
+}
+
+
+
+.modal-hide{
+  animation-name: myanimation-out;   /*  名字，随便取 */
+  animation-duration: 0.3s;            /*  持续时间 */
+  animation-iteration-count: 1;    /*  动画执行三遍， 设置为infinite，可以一直执行 */
+  animation-timing-function: ease-out; 
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes myanimation-out{
+  0% { bottom: 0rpx; left: 0px;  }   /*  0%是指从零开始， */
+  100% {  bottom: -300rpx; left: 0px;  }
+}

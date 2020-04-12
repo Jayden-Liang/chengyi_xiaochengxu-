@@ -1,0 +1,12 @@
+<view class="{{show ? 'weui-show' :'weui-hidden'}}">
+  <view class="weui-mask init" wx:if="{{mask}}" bindtap="close" data-type="tap"></view>
+  <view class="weui-half-screen-dialog {{extClass}}">
+  <view><slot></slot></view>
+    <view class="mybutton"  bindtap="close" data-type="close">
+      <view wx:if="{{closabled}}" class="bottom-button">
+        <view>{{ btnText }}</view>
+      </view>
+    </view>
+    
+  </view>
+</view>

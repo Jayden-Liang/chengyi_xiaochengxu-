@@ -1,66 +1,74 @@
 // pages/catagory/catagory.js
+
+import {getTags, getDisplay, calHeight} from '../../service/catagory.js'
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+     typelist:["女装","男装","童装","婴幼儿","运动"],
+     stabletag:["全部商品","秋冬新品"],
+     tags:[],
+     display:[],
+    activetag: '上衣类',
+     activetype:'',
+     displayHeight: ''
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
 
+  onMyEvent: function(e){
+    const activetype = this.data.typelist[e.detail.index]
+    const tags = getTags(activetype)
+    let displays=''
+    if (activetype=='运动'){
+       displays = getDisplay(activetype, "运动女装")
+    }else{
+       displays = getDisplay(activetype, "上衣类")
+    }
+    const displayHeight = calHeight(displays.length)
+    this.setData({
+      tags: tags,
+      activetype: activetype,
+      display: displays,
+      displayHeight: displayHeight
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onLoad: function(){
+    const tags=getTags()
+    const displays = getDisplay("女装", "上衣类")
+    this.setData({
+      tags: tags,
+      display: displays,
+      activetype:'女装',
+      
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  tagTap: function(e){
+    const displays = getDisplay(this.data.activetype, e.target.dataset.name)
+    const displayHeight= calHeight(displays.length)
+    this.setData({
+      display: displays,
+      activetag: e.target.dataset.name,
+      displayHeight: displayHeight
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  tapAllgoods: function(){
+    console.log('ye')
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
   }
+
+
+
+
+
+
 })
+

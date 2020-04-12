@@ -1,0 +1,28 @@
+<!--pages/index/products/products.wxml-->
+<view class="col">
+<view class="col-1">
+<block wx:for="{{products[0]}}"  wx:key="{{index}}">
+<view class='detail'>
+  <view><image mode="widthFix" src="{{item.url}}"></image></view>
+  <view class="description">
+   <text>{{item.title}}</text>
+   <view class="price-set">￥<text class="price">{{item.price}}</text></view>
+   
+  </view>
+ </view>
+</block>
+</view>
+<view class="col-2">
+<block wx:for="{{products[1]}}" wx:key="{{index}}" >
+<view class="detail">
+  <view><image mode="widthFix" src="{{item.url}}"></image></view>
+  <view class="description">
+   <text>{{item.title}}</text>
+   <view class="price-set">￥<text class="price">{{item.price}}</text></view>
+   
+  </view>
+</view>
+</block>
+</view>
+</view>
+

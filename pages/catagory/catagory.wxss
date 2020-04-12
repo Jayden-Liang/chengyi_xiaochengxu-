@@ -1,1 +1,84 @@
 /* pages/catagory/catagory.wxss */
+.cata_select_group_active{
+  border-bottom: 1px #133337 solid;
+}
+
+.cata_flex{
+  display: flex;
+  border-bottom: 1rpx #eeeeee solid; 
+}
+
+.cata_flex view{
+  flex-basis: 20%;
+  padding: 15rpx 0;
+  margin-bottom: 0;
+}
+
+.cata-zones{
+  display: flex;
+}
+
+.tag-zone{
+  border-right: 1rpx #eeeeee solid;
+  border-top: none;
+  height: calc(100vh - 120rpx);
+  flex-basis: 25%;
+}
+.tag{
+  text-align: center;
+  margin: 50rpx 0;
+  font-size: 26rpx;
+}
+
+.tag-active{
+  border-left: 6rpx #065535 solid;
+}
+
+.center-void{
+  flex-basis: 5%;
+}
+.display-zone{
+  flex-basis: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50rpx;
+
+}
+
+.each{
+  width: 30%;
+  font-size: 24rpx;
+  text-align: center;
+  display: inline-block;
+  height: 150rpx;
+
+}
+
+.each image{
+
+  margin-left: 20rpx;
+}
+.each view{
+  width: 180rpx;
+  margin: auto;
+}
+
+
+
+
+
+@media screen and (min-width: 350px) {
+  .tag-zone{
+  height: calc(100vh - 125rpx);
+}
+}
+@media screen and (min-width: 370px) {
+  .tag-zone{
+  height: calc(100vh - 122rpx);
+}
+}
+@media screen and (min-width: 380px) {
+  .tag-zone{
+  height: calc(100vh - 123rpx);
+}
+}
